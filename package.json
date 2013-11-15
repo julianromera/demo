@@ -1,0 +1,20 @@
+{
+	"name" : "politejs-demo-project",
+	"description" : "Blog & Documentation for PoliteJS",
+	"version" : "0.0.1",
+	"author" : "Marco Pegoraro <mpeg@politejs.com>",
+	"contributors" : [{
+		"name" : "Silvia Trevellin"
+	}],
+	"repository" : {
+		"type" : "git",
+		"url" : "https://github.com/PoliteJS/demo"
+	},
+	"keywords" : [
+		"politejs", "polite",
+		"docs", "documentation", "api", "howto"
+	],
+	"dependencies" : {
+		"grunt": "~0.4.1"
+	}
+}
