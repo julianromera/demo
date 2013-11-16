@@ -11,11 +11,29 @@ module.exports = function(grunt) {
 
 		pkg : grunt.file.readJSON("package.json"),
 
-		politeConf : grunt.file.readJSON("polite.json"),
-
 		polite: {
 			build: {
+				src: './web-source',
+				dest: './web-build/'
+			}
+		},
 
+		clean: {
+			build: ['<%= polite.build.dest %>']
+		},
+
+		copy: {
+			'polite-content-assets': {
+				expand: true,
+				cwd: '<%= polite.build.src %>/contents/',
+				src: ['assets/**'],
+				dest: '<%= polite.build.dest %>'
+			},
+			'polite-template-assets': {
+				expand: true,
+				cwd: '<%= polite.build.src %>/template/assets/',
+				src: ['**'],
+				dest: '<%= polite.build.dest %>/template-assets/'
 			}
 		},
 
@@ -55,6 +73,9 @@ module.exports = function(grunt) {
 	 */
 
 	grunt.registerTask('default', [
+		'clean:build',
+		'copy:polite-content-assets',
+		'copy:polite-template-assets',
 		'polite'
 	]);
 
@@ -64,7 +85,7 @@ module.exports = function(grunt) {
 	]);
 
 	grunt.registerTask('deploy', [
-		'default',
+		'default'
 		// push to remote task
 	]);
 
