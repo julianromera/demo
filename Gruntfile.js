@@ -1,5 +1,5 @@
 /**
- * PoliteJS Demo
+ * PoliteJS Building Script
  *
  */
 
@@ -13,8 +13,8 @@ module.exports = function(grunt) {
 
 		polite: {
 			build: {
-				src: './web-source',
-				dest: './web-build/'
+				src: './sources',
+				dest: './www/'
 			}
 		},
 
@@ -25,7 +25,7 @@ module.exports = function(grunt) {
 		copy: {
 			'polite-content-assets': {
 				expand: true,
-				cwd: '<%= polite.build.src %>/contents/',
+				cwd: '<%= polite.build.src %>/',
 				src: ['assets/**'],
 				dest: '<%= polite.build.dest %>'
 			},
