@@ -64,6 +64,7 @@ If you plan to edit your contents intensively you probably want to avoid to come
 grunt start
 ```
 
-Above script allow you to edit you content and have your `/www` always up to date. Just refresh the web page!
+Above script allow you to edit your `/sources` and have your `/www` always up to date.  
+Just refresh the web page!
 
-> If you are working on both _core_ source code and contents you probably want to run `grunt start` on both repos to enjoy a complete automatism in updating the `/www` folder!
+> If you are working on both _core_ source code and _demo_ contents you probably want to run `grunt start` on both repos to enjoy **a complete automatism in building the `/www`** folder!
