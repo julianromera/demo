@@ -27,6 +27,7 @@
     "grunt-contrib-watch": "~0.5.3"
   },
   "devDependencies": {
-    "async": "~0.2.9"
+    "async": "~0.2.9",
+    "extend": "~1.2.1"
   }
 }
