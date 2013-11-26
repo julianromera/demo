@@ -29,6 +29,7 @@
   "devDependencies": {
     "async": "~0.2.9",
     "extend": "~1.2.1",
-    "polite-plugin-manager": "~0.0.1"
+    "polite-plugin-manager": "~0.0.1",
+	"polite-driver-manager": "~0.0.1"
   }
 }
